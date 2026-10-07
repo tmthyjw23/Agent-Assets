@@ -1,0 +1,27 @@
+{
+  "skill_name": "test-driven-development",
+  "evals": [
+    {
+      "id": "tdd-cycle",
+      "name": "TDD red-green-refactor cycle",
+      "prompt": "I need to implement a function that calculates the factorial of a number. Walk me through how you would develop this using TDD.",
+      "expected_output": "The response follows red-green-refactor: writes a failing test first, then minimal implementation, then refactors. Mentions specific test cases (0!, 1!, 5!).",
+      "assertions": [
+        "The response mentions writing a test before implementation code.",
+        "The response describes the red-green-refactor cycle or equivalent steps.",
+        "The response includes specific test cases or examples (e.g., factorial of 0, 1, or 5)."
+      ]
+    },
+    {
+      "id": "tdd-when-to-use",
+      "name": "TDD usage guidance",
+      "prompt": "When should I use TDD and when should I not?",
+      "expected_output": "The response correctly identifies that TDD is for new features and bug fixes, and may not be appropriate for exploratory prototyping or one-off scripts.",
+      "assertions": [
+        "The response mentions new features as a case for TDD.",
+        "The response mentions bug fixes as a case for TDD.",
+        "The response provides at least one scenario where TDD may not be needed."
+      ]
+    }
+  ]
+}

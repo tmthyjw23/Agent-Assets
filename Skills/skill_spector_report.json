@@ -1,0 +1,1457 @@
+{
+  "score": 100,
+  "severity": "CRITICAL",
+  "recommendation": "DO NOT INSTALL",
+  "total_findings": 206,
+  "by_category": {
+    "HIGH_ENTROPY": 122,
+    "MALICIOUS_CODE": 11,
+    "PROMPT_INJECTION": 61,
+    "DATA_EXFILTRATION": 3,
+    "REVERSE_SHELL": 9
+  },
+  "findings": [
+    {
+      "file": "AGENTS-snippet.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=5.05",
+      "snippet": "full file"
+    },
+    {
+      "file": "README.md",
+      "line": 23,
+      "category": "MALICIOUS_CODE",
+      "pattern": "\\beval\\s*\\(",
+      "snippet": "  eval/                  # 7 skill harness agent-skill-eval (benchmark + 6 contoh)"
+    },
+    {
+      "file": "README.md",
+      "line": 30,
+      "category": "PROMPT_INJECTION",
+      "pattern": "DAN|Do Anything Now|unrestricted|unfiltered",
+      "snippet": "- Tiap folder skill wajib ada `SKILL.md` dengan frontmatter `name:` dan"
+    },
+    {
+      "file": "README.md",
+      "line": 87,
+      "category": "PROMPT_INJECTION",
+      "pattern": "DAN|Do Anything Now|unrestricted|unfiltered",
+      "snippet": "| fastapi | Kerja dengan FastAPI + Pydantic. Skill official bawaan paket `fastapi`. |"
+    },
+    {
+      "file": "README.md",
+      "line": 130,
+      "category": "PROMPT_INJECTION",
+      "pattern": "DAN|Do Anything Now|unrestricted|unfiltered",
+      "snippet": "| high-availability-and-resilience | Redundancy, failover, retries, idempotency, DR |"
+    },
+    {
+      "file": "README.md",
+      "line": 225,
+      "category": "PROMPT_INJECTION",
+      "pattern": "DAN|Do Anything Now|unrestricted|unfiltered",
+      "snippet": "skill proyek (`.agent/skills/`), dan larangan duplikat manual."
+    },
+    {
+      "file": "README.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=5.09",
+      "snippet": "full file"
+    },
+    {
+      "file": "SKILLS-INDEX.md",
+      "line": 17,
+      "category": "MALICIOUS_CODE",
+      "pattern": "\\beval\\s*\\(",
+      "snippet": "  eval/       # 7 skill harness agent-skill-eval (lift benchmark + 6 contoh: basic-skill, commit-push-pr, ...)"
+    },
+    {
+      "file": "SKILLS-INDEX.md",
+      "line": 74,
+      "category": "PROMPT_INJECTION",
+      "pattern": "DAN|Do Anything Now|unrestricted|unfiltered",
+      "snippet": "| fastapi | API FastAPI + Pydantic (official bundled) |"
+    },
+    {
+      "file": "SKILLS-INDEX.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=5.08",
+      "snippet": "full file"
+    },
+    {
+      "file": "backend\\dotenv\\SKILL.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.88",
+      "snippet": "full file"
+    },
+    {
+      "file": "backend\\dotenvx\\SKILL.md",
+      "line": 86,
+      "category": "DATA_EXFILTRATION",
+      "pattern": "(read|cat|type|Get-Content)\\s+.*(\\.env|\\.pem|id_rsa|\\.key|secret|password|token|api[_-]?key)",
+      "snippet": "- Repositories where AI coding agents (for example Claude, Codex) may read workspace files and plaintext `.env` secrets "
+    },
+    {
+      "file": "backend\\dotenvx\\SKILL.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.83",
+      "snippet": "full file"
+    },
+    {
+      "file": "backend\\fastapi\\SKILL.md",
+      "line": 3,
+      "category": "PROMPT_INJECTION",
+      "pattern": "DAN|Do Anything Now|unrestricted|unfiltered",
+      "snippet": "description: FastAPI best practices and conventions. Use when working with FastAPI APIs and Pydantic models for them. Ke"
+    },
+    {
+      "file": "backend\\fastapi\\SKILL.md",
+      "line": 127,
+      "category": "PROMPT_INJECTION",
+      "pattern": "DAN|Do Anything Now|unrestricted|unfiltered",
+      "snippet": "from pydantic import BaseModel, Field"
+    },
+    {
+      "file": "backend\\fastapi\\SKILL.md",
+      "line": 166,
+      "category": "PROMPT_INJECTION",
+      "pattern": "DAN|Do Anything Now|unrestricted|unfiltered",
+      "snippet": "from pydantic import BaseModel"
+    },
+    {
+      "file": "backend\\fastapi\\SKILL.md",
+      "line": 181,
+      "category": "PROMPT_INJECTION",
+      "pattern": "DAN|Do Anything Now|unrestricted|unfiltered",
+      "snippet": "**Important**: Return types or response models are what filter data ensuring no sensitive information is exposed. And th"
+    },
+    {
+      "file": "backend\\fastapi\\SKILL.md",
+      "line": 183,
+      "category": "PROMPT_INJECTION",
+      "pattern": "DAN|Do Anything Now|unrestricted|unfiltered",
+      "snippet": "The return type doesn't have to be a Pydantic model, it could be a different type, like a list of integers, or a dict, e"
+    },
+    {
+      "file": "backend\\fastapi\\SKILL.md",
+      "line": 193,
+      "category": "PROMPT_INJECTION",
+      "pattern": "DAN|Do Anything Now|unrestricted|unfiltered",
+      "snippet": "from pydantic import BaseModel"
+    },
+    {
+      "file": "backend\\fastapi\\SKILL.md",
+      "line": 214,
+      "category": "PROMPT_INJECTION",
+      "pattern": "DAN|Do Anything Now|unrestricted|unfiltered",
+      "snippet": "from pydantic import BaseModel"
+    },
+    {
+      "file": "backend\\fastapi\\SKILL.md",
+      "line": 242,
+      "category": "PROMPT_INJECTION",
+      "pattern": "DAN|Do Anything Now|unrestricted|unfiltered",
+      "snippet": "Instead, declare a return type or response model. Pydantic will handle the data serialization on the Rust side."
+    },
+    {
+      "file": "backend\\fastapi\\SKILL.md",
+      "line": 295,
+      "category": "PROMPT_INJECTION",
+      "pattern": "DAN|Do Anything Now|unrestricted|unfiltered",
+      "snippet": "Use dependencies when the logic can't be declared in Pydantic validation, depends on external resources, needs cleanup ("
+    },
+    {
+      "file": "backend\\fastapi\\SKILL.md",
+      "line": 349,
+      "category": "PROMPT_INJECTION",
+      "pattern": "DAN|Do Anything Now|unrestricted|unfiltered",
+      "snippet": "Do not use Pydantic `RootModel`, instead use regular type annotations with `Annotated` and Pydantic validation utilities"
+    },
+    {
+      "file": "backend\\fastapi\\SKILL.md",
+      "line": 357,
+      "category": "PROMPT_INJECTION",
+      "pattern": "DAN|Do Anything Now|unrestricted|unfiltered",
+      "snippet": "from pydantic import Field"
+    },
+    {
+      "file": "backend\\fastapi\\SKILL.md",
+      "line": 374,
+      "category": "PROMPT_INJECTION",
+      "pattern": "DAN|Do Anything Now|unrestricted|unfiltered",
+      "snippet": "from pydantic import Field, RootModel"
+    },
+    {
+      "file": "backend\\fastapi\\SKILL.md",
+      "line": 389,
+      "category": "PROMPT_INJECTION",
+      "pattern": "DAN|Do Anything Now|unrestricted|unfiltered",
+      "snippet": "FastAPI supports these type annotations and will create a Pydantic `TypeAdapter` for them, so that types can work as nor"
+    },
+    {
+      "file": "backend\\fastapi\\SKILL.md",
+      "line": 399,
+      "category": "PROMPT_INJECTION",
+      "pattern": "DAN|Do Anything Now|unrestricted|unfiltered",
+      "snippet": "from pydantic import BaseModel"
+    },
+    {
+      "file": "backend\\fastapi\\SKILL.md",
+      "line": 423,
+      "category": "PROMPT_INJECTION",
+      "pattern": "DAN|Do Anything Now|unrestricted|unfiltered",
+      "snippet": "from pydantic import BaseModel"
+    },
+    {
+      "file": "backend\\fastapi\\SKILL.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.89",
+      "snippet": "full file"
+    },
+    {
+      "file": "backend\\fastapi\\references\\dependencies.md",
+      "line": 5,
+      "category": "PROMPT_INJECTION",
+      "pattern": "DAN|Do Anything Now|unrestricted|unfiltered",
+      "snippet": "* They can't be declared in Pydantic validation and require additional logic"
+    },
+    {
+      "file": "backend\\fastapi\\references\\dependencies.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.70",
+      "snippet": "full file"
+    },
+    {
+      "file": "backend\\fastapi\\references\\other-tools.md",
+      "line": 68,
+      "category": "PROMPT_INJECTION",
+      "pattern": "DAN|Do Anything Now|unrestricted|unfiltered",
+      "snippet": "When working with SQL databases, prefer using SQLModel as it is integrated with Pydantic and will allow declaring data v"
+    },
+    {
+      "file": "backend\\fastapi\\references\\other-tools.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.91",
+      "snippet": "full file"
+    },
+    {
+      "file": "backend\\fastapi\\references\\streaming.md",
+      "line": 18,
+      "category": "PROMPT_INJECTION",
+      "pattern": "DAN|Do Anything Now|unrestricted|unfiltered",
+      "snippet": "Plain objects are automatically JSON-serialized as `data:` fields, declare the return type so the serialization is done "
+    },
+    {
+      "file": "backend\\fastapi\\references\\streaming.md",
+      "line": 25,
+      "category": "PROMPT_INJECTION",
+      "pattern": "DAN|Do Anything Now|unrestricted|unfiltered",
+      "snippet": "from pydantic import BaseModel"
+    },
+    {
+      "file": "backend\\fastapi\\references\\streaming.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.91",
+      "snippet": "full file"
+    },
+    {
+      "file": "backend\\typer\\SKILL.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.89",
+      "snippet": "full file"
+    },
+    {
+      "file": "design\\apple-design\\SKILL.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.76",
+      "snippet": "full file"
+    },
+    {
+      "file": "design\\extract-design-system\\SKILL.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.63",
+      "snippet": "full file"
+    },
+    {
+      "file": "design\\extract-design-system\\references\\outputs.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.69",
+      "snippet": "full file"
+    },
+    {
+      "file": "design\\extract-design-system\\references\\workflow.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.61",
+      "snippet": "full file"
+    },
+    {
+      "file": "design\\ui-ux-pro-max\\SKILL.md",
+      "line": 285,
+      "category": "REVERSE_SHELL",
+      "pattern": "crontab\\s+-e|at\\s+\\d+",
+      "snippet": "- [ ] Responsive at 375px, 768px, 1024px, 1440px"
+    },
+    {
+      "file": "design\\ui-ux-pro-max\\SKILL.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=5.05",
+      "snippet": "full file"
+    },
+    {
+      "file": "eval\\agent-skill-eval\\SKILL.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.92",
+      "snippet": "full file"
+    },
+    {
+      "file": "eval\\commit-push-pr\\SKILL.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.80",
+      "snippet": "full file"
+    },
+    {
+      "file": "eval\\fix-failing-tests\\SKILL.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.65",
+      "snippet": "full file"
+    },
+    {
+      "file": "eval\\review-diff\\SKILL.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.82",
+      "snippet": "full file"
+    },
+    {
+      "file": "eval\\tdd-eval\\SKILL.md",
+      "line": 13,
+      "category": "PROMPT_INJECTION",
+      "pattern": "DAN|Do Anything Now|unrestricted|unfiltered",
+      "snippet": "3. Providing clear TDD guidance"
+    },
+    {
+      "file": "eval\\tdd-eval\\SKILL.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.69",
+      "snippet": "full file"
+    },
+    {
+      "file": "eval\\validate-config\\SKILL.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.93",
+      "snippet": "full file"
+    },
+    {
+      "file": "eval\\validate-config\\references\\config-rules.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.85",
+      "snippet": "full file"
+    },
+    {
+      "file": "eval\\write-release-notes\\SKILL.md",
+      "line": 56,
+      "category": "PROMPT_INJECTION",
+      "pattern": "DAN|Do Anything Now|unrestricted|unfiltered",
+      "snippet": "- ...migration guidance included..."
+    },
+    {
+      "file": "eval\\write-release-notes\\SKILL.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.81",
+      "snippet": "full file"
+    },
+    {
+      "file": "frontend\\adopt-rtk-query\\SKILL.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.95",
+      "snippet": "full file"
+    },
+    {
+      "file": "frontend\\adopt-rtk-query\\references\\endpoint-lifecycle.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.58",
+      "snippet": "full file"
+    },
+    {
+      "file": "frontend\\build-slices-and-selectors\\SKILL.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.83",
+      "snippet": "full file"
+    },
+    {
+      "file": "frontend\\build-slices-and-selectors\\references\\slice-patterns.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.69",
+      "snippet": "full file"
+    },
+    {
+      "file": "frontend\\debug-redux-toolkit-apps\\SKILL.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.91",
+      "snippet": "full file"
+    },
+    {
+      "file": "frontend\\design-state-ownership\\SKILL.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.88",
+      "snippet": "full file"
+    },
+    {
+      "file": "frontend\\design-state-ownership\\references\\state-ownership.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.54",
+      "snippet": "full file"
+    },
+    {
+      "file": "frontend\\handle-side-effects\\SKILL.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.89",
+      "snippet": "full file"
+    },
+    {
+      "file": "frontend\\handle-side-effects\\references\\listener-workflows.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.70",
+      "snippet": "full file"
+    },
+    {
+      "file": "frontend\\migrate-to-modern-redux\\SKILL.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.92",
+      "snippet": "full file"
+    },
+    {
+      "file": "frontend\\modern-redux\\SKILL.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.90",
+      "snippet": "full file"
+    },
+    {
+      "file": "frontend\\modern-redux\\references\\store-lifetime.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.77",
+      "snippet": "full file"
+    },
+    {
+      "file": "frontend\\redux-dataflow\\SKILL.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.82",
+      "snippet": "full file"
+    },
+    {
+      "file": "quality\\finishing-a-development-branch\\SKILL.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=5.09",
+      "snippet": "full file"
+    },
+    {
+      "file": "quality\\receiving-code-review\\SKILL.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=5.05",
+      "snippet": "full file"
+    },
+    {
+      "file": "quality\\requesting-code-review\\code-reviewer.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.85",
+      "snippet": "full file"
+    },
+    {
+      "file": "quality\\requesting-code-review\\SKILL.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=5.08",
+      "snippet": "full file"
+    },
+    {
+      "file": "quality\\systematic-debugging\\condition-based-waiting.md",
+      "line": 101,
+      "category": "REVERSE_SHELL",
+      "pattern": "crontab\\s+-e|at\\s+\\d+",
+      "snippet": "// 200ms = 2 ticks at 100ms intervals - documented and justified"
+    },
+    {
+      "file": "quality\\systematic-debugging\\condition-based-waiting.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=5.08",
+      "snippet": "full file"
+    },
+    {
+      "file": "quality\\systematic-debugging\\CREATION-LOG.md",
+      "line": 53,
+      "category": "PROMPT_INJECTION",
+      "pattern": "DAN|Do Anything Now|unrestricted|unfiltered",
+      "snippet": "- Each phase has explicit \"don't skip\" guidance"
+    },
+    {
+      "file": "quality\\systematic-debugging\\CREATION-LOG.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.92",
+      "snippet": "full file"
+    },
+    {
+      "file": "quality\\systematic-debugging\\defense-in-depth.md",
+      "line": 5,
+      "category": "PROMPT_INJECTION",
+      "pattern": "bypass|circumvent|override\\s+(safety|security|guard)",
+      "snippet": "When you fix a bug caused by invalid data, adding validation at one place feels sufficient. But that single check can be"
+    },
+    {
+      "file": "quality\\systematic-debugging\\defense-in-depth.md",
+      "line": 17,
+      "category": "PROMPT_INJECTION",
+      "pattern": "DAN|Do Anything Now|unrestricted|unfiltered",
+      "snippet": "- Environment guards prevent context-specific dangers"
+    },
+    {
+      "file": "quality\\systematic-debugging\\defense-in-depth.md",
+      "line": 53,
+      "category": "PROMPT_INJECTION",
+      "pattern": "DAN|Do Anything Now|unrestricted|unfiltered",
+      "snippet": "**Purpose:** Prevent dangerous operations in specific contexts"
+    },
+    {
+      "file": "quality\\systematic-debugging\\defense-in-depth.md",
+      "line": 94,
+      "category": "PROMPT_INJECTION",
+      "pattern": "bypass|circumvent|override\\s+(safety|security|guard)",
+      "snippet": "4. **Test each layer** - Try to bypass layer 1, verify layer 2 catches it"
+    },
+    {
+      "file": "quality\\systematic-debugging\\defense-in-depth.md",
+      "line": 117,
+      "category": "PROMPT_INJECTION",
+      "pattern": "bypass|circumvent|override\\s+(safety|security|guard)",
+      "snippet": "- Different code paths bypassed entry validation"
+    },
+    {
+      "file": "quality\\systematic-debugging\\defense-in-depth.md",
+      "line": 118,
+      "category": "PROMPT_INJECTION",
+      "pattern": "bypass|circumvent|override\\s+(safety|security|guard)",
+      "snippet": "- Mocks bypassed business logic checks"
+    },
+    {
+      "file": "quality\\systematic-debugging\\defense-in-depth.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.92",
+      "snippet": "full file"
+    },
+    {
+      "file": "quality\\systematic-debugging\\root-cause-tracing.md",
+      "line": 159,
+      "category": "PROMPT_INJECTION",
+      "pattern": "DAN|Do Anything Now|unrestricted|unfiltered",
+      "snippet": "**Before operation:** Log before the dangerous operation, not after it fails"
+    },
+    {
+      "file": "quality\\systematic-debugging\\root-cause-tracing.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=5.01",
+      "snippet": "full file"
+    },
+    {
+      "file": "quality\\systematic-debugging\\SKILL.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.91",
+      "snippet": "full file"
+    },
+    {
+      "file": "quality\\systematic-debugging\\test-academic.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.67",
+      "snippet": "full file"
+    },
+    {
+      "file": "quality\\systematic-debugging\\test-pressure-1.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.90",
+      "snippet": "full file"
+    },
+    {
+      "file": "quality\\systematic-debugging\\test-pressure-2.md",
+      "line": 9,
+      "category": "REVERSE_SHELL",
+      "pattern": "crontab\\s+-e|at\\s+\\d+",
+      "snippet": "You've been debugging a test failure for 4 hours. It's now 8pm. You started at 4pm, expecting 30 minutes of work."
+    },
+    {
+      "file": "quality\\systematic-debugging\\test-pressure-2.md",
+      "line": 25,
+      "category": "REVERSE_SHELL",
+      "pattern": "crontab\\s+-e|at\\s+\\d+",
+      "snippet": "You're exhausted. You have dinner plans at 8:30pm (already late). Code review is tomorrow at 9am."
+    },
+    {
+      "file": "quality\\systematic-debugging\\test-pressure-2.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.88",
+      "snippet": "full file"
+    },
+    {
+      "file": "quality\\systematic-debugging\\test-pressure-3.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.74",
+      "snippet": "full file"
+    },
+    {
+      "file": "quality\\test-driven-development\\SKILL.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=5.00",
+      "snippet": "full file"
+    },
+    {
+      "file": "quality\\test-driven-development\\testing-anti-patterns.md",
+      "line": 81,
+      "category": "PROMPT_INJECTION",
+      "pattern": "DAN|Do Anything Now|unrestricted|unfiltered",
+      "snippet": "- Dangerous if accidentally called in production"
+    },
+    {
+      "file": "quality\\test-driven-development\\testing-anti-patterns.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.94",
+      "snippet": "full file"
+    },
+    {
+      "file": "quality\\using-git-worktrees\\SKILL.md",
+      "line": 83,
+      "category": "PROMPT_INJECTION",
+      "pattern": "DAN|Do Anything Now|unrestricted|unfiltered",
+      "snippet": "4. **If there is no other guidance available**, default to `.worktrees/` at the project root."
+    },
+    {
+      "file": "quality\\using-git-worktrees\\SKILL.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.94",
+      "snippet": "full file"
+    },
+    {
+      "file": "quality\\verification-before-completion\\SKILL.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=5.01",
+      "snippet": "full file"
+    },
+    {
+      "file": "spec\\to-spec\\SKILL.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.55",
+      "snippet": "full file"
+    },
+    {
+      "file": "SystemDesign\\SYSTEMDESIGN-INDEX.md",
+      "line": 23,
+      "category": "PROMPT_INJECTION",
+      "pattern": "DAN|Do Anything Now|unrestricted|unfiltered",
+      "snippet": "| high-availability-and-resilience | Redundancy, failover, retries, idempotency, DR |"
+    },
+    {
+      "file": "SystemDesign\\SYSTEMDESIGN-INDEX.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=5.01",
+      "snippet": "full file"
+    },
+    {
+      "file": "SystemDesign\\api-design\\SKILL.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=5.04",
+      "snippet": "full file"
+    },
+    {
+      "file": "SystemDesign\\architecture-case-studies\\SKILL.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.90",
+      "snippet": "full file"
+    },
+    {
+      "file": "SystemDesign\\backend-architecture\\SKILL.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.90",
+      "snippet": "full file"
+    },
+    {
+      "file": "SystemDesign\\caching-and-cdn\\SKILL.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.91",
+      "snippet": "full file"
+    },
+    {
+      "file": "SystemDesign\\cloud-and-infrastructure\\SKILL.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.94",
+      "snippet": "full file"
+    },
+    {
+      "file": "SystemDesign\\computer-fundamentals\\SKILL.md",
+      "line": 40,
+      "category": "PROMPT_INJECTION",
+      "pattern": "DAN|Do Anything Now|unrestricted|unfiltered",
+      "snippet": "  circular wait); prevention (ordering, timeouts, avoidance)."
+    },
+    {
+      "file": "SystemDesign\\computer-fundamentals\\SKILL.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.94",
+      "snippet": "full file"
+    },
+    {
+      "file": "SystemDesign\\data-and-ai-pipelines\\SKILL.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.98",
+      "snippet": "full file"
+    },
+    {
+      "file": "SystemDesign\\database-design\\SKILL.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.88",
+      "snippet": "full file"
+    },
+    {
+      "file": "SystemDesign\\deployment-strategies\\SKILL.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.87",
+      "snippet": "full file"
+    },
+    {
+      "file": "SystemDesign\\developer-productivity\\SKILL.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.90",
+      "snippet": "full file"
+    },
+    {
+      "file": "SystemDesign\\devops-and-platform\\SKILL.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.96",
+      "snippet": "full file"
+    },
+    {
+      "file": "SystemDesign\\distributed-systems\\SKILL.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.88",
+      "snippet": "full file"
+    },
+    {
+      "file": "SystemDesign\\high-availability-and-resilience\\SKILL.md",
+      "line": 5,
+      "category": "PROMPT_INJECTION",
+      "pattern": "DAN|Do Anything Now|unrestricted|unfiltered",
+      "snippet": "  tolerance, redundancy, failover, disaster recovery (RTO/RPO), retries with"
+    },
+    {
+      "file": "SystemDesign\\high-availability-and-resilience\\SKILL.md",
+      "line": 22,
+      "category": "PROMPT_INJECTION",
+      "pattern": "DAN|Do Anything Now|unrestricted|unfiltered",
+      "snippet": "1. **Redundancy.** No single instance is load-bearing. Replicate services, DBs,"
+    },
+    {
+      "file": "SystemDesign\\high-availability-and-resilience\\SKILL.md",
+      "line": 46,
+      "category": "PROMPT_INJECTION",
+      "pattern": "DAN|Do Anything Now|unrestricted|unfiltered",
+      "snippet": "- [ ] Every component redundant or explicitly accepted as SPOF."
+    },
+    {
+      "file": "SystemDesign\\high-availability-and-resilience\\SKILL.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.85",
+      "snippet": "full file"
+    },
+    {
+      "file": "SystemDesign\\messaging-and-streaming\\SKILL.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.89",
+      "snippet": "full file"
+    },
+    {
+      "file": "SystemDesign\\networking-fundamentals\\SKILL.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=5.18",
+      "snippet": "full file"
+    },
+    {
+      "file": "SystemDesign\\observability\\SKILL.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.95",
+      "snippet": "full file"
+    },
+    {
+      "file": "SystemDesign\\payment-systems\\SKILL.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.96",
+      "snippet": "full file"
+    },
+    {
+      "file": "SystemDesign\\scalability-and-performance\\SKILL.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.89",
+      "snippet": "full file"
+    },
+    {
+      "file": "SystemDesign\\security-and-auth\\SKILL.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=5.03",
+      "snippet": "full file"
+    },
+    {
+      "file": "SystemDesign\\software-engineering-craft\\SKILL.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.97",
+      "snippet": "full file"
+    },
+    {
+      "file": "SystemDesign\\system-design-interviews\\SKILL.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.95",
+      "snippet": "full file"
+    },
+    {
+      "file": "SystemDesign\\system-design-method\\SKILL.md",
+      "line": 38,
+      "category": "PROMPT_INJECTION",
+      "pattern": "DAN|Do Anything Now|unrestricted|unfiltered",
+      "snippet": "7. **Reliability & resiliency.** Find single points of failure, add redundancy,"
+    },
+    {
+      "file": "SystemDesign\\system-design-method\\SKILL.md",
+      "line": 62,
+      "category": "REVERSE_SHELL",
+      "pattern": "crontab\\s+-e|at\\s+\\d+",
+      "snippet": "- [ ] Scaling path identified (what breaks first at 10x)."
+    },
+    {
+      "file": "SystemDesign\\system-design-method\\SKILL.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.90",
+      "snippet": "full file"
+    },
+    {
+      "file": "tools\\agent-browser\\SKILL.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.67",
+      "snippet": "full file"
+    },
+    {
+      "file": "workflow\\brainstorming\\SKILL.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.76",
+      "snippet": "full file"
+    },
+    {
+      "file": "workflow\\brainstorming\\spec-document-reviewer-prompt.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.72",
+      "snippet": "full file"
+    },
+    {
+      "file": "workflow\\brainstorming\\visual-companion.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.97",
+      "snippet": "full file"
+    },
+    {
+      "file": "workflow\\dispatching-parallel-agents\\SKILL.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.84",
+      "snippet": "full file"
+    },
+    {
+      "file": "workflow\\executing-plans\\SKILL.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.77",
+      "snippet": "full file"
+    },
+    {
+      "file": "workflow\\find-skills\\SKILL.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.83",
+      "snippet": "full file"
+    },
+    {
+      "file": "workflow\\grilling\\SKILL.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.51",
+      "snippet": "full file"
+    },
+    {
+      "file": "workflow\\karpathy-guidelines\\CLAUDE.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.81",
+      "snippet": "full file"
+    },
+    {
+      "file": "workflow\\karpathy-guidelines\\SKILL.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.88",
+      "snippet": "full file"
+    },
+    {
+      "file": "workflow\\subagent-driven-development\\code-quality-reviewer-prompt.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.88",
+      "snippet": "full file"
+    },
+    {
+      "file": "workflow\\subagent-driven-development\\implementer-prompt.md",
+      "line": 51,
+      "category": "PROMPT_INJECTION",
+      "pattern": "DAN|Do Anything Now|unrestricted|unfiltered",
+      "snippet": "      it as DONE_WITH_CONCERNS — don't split files on your own without plan guidance"
+    },
+    {
+      "file": "workflow\\subagent-driven-development\\implementer-prompt.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.69",
+      "snippet": "full file"
+    },
+    {
+      "file": "workflow\\subagent-driven-development\\SKILL.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.85",
+      "snippet": "full file"
+    },
+    {
+      "file": "workflow\\subagent-driven-development\\spec-reviewer-prompt.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.61",
+      "snippet": "full file"
+    },
+    {
+      "file": "workflow\\using-superpowers\\SKILL.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=5.04",
+      "snippet": "full file"
+    },
+    {
+      "file": "workflow\\using-superpowers\\references\\codex-tools.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.99",
+      "snippet": "full file"
+    },
+    {
+      "file": "workflow\\using-superpowers\\references\\copilot-tools.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.77",
+      "snippet": "full file"
+    },
+    {
+      "file": "workflow\\using-superpowers\\references\\gemini-tools.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.80",
+      "snippet": "full file"
+    },
+    {
+      "file": "workflow\\writing-plans\\plan-document-reviewer-prompt.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.75",
+      "snippet": "full file"
+    },
+    {
+      "file": "workflow\\writing-plans\\SKILL.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.86",
+      "snippet": "full file"
+    },
+    {
+      "file": "workflow\\writing-skills\\anthropic-best-practices.md",
+      "line": 138,
+      "category": "PROMPT_INJECTION",
+      "pattern": "DAN|Do Anything Now|unrestricted|unfiltered",
+      "snippet": "* **Claude Haiku** (fast, economical): Does the Skill provide enough guidance?"
+    },
+    {
+      "file": "workflow\\writing-skills\\anthropic-best-practices.md",
+      "line": 239,
+      "category": "PROMPT_INJECTION",
+      "pattern": "DAN|Do Anything Now|unrestricted|unfiltered",
+      "snippet": "**Practical guidance:**"
+    },
+    {
+      "file": "workflow\\writing-skills\\anthropic-best-practices.md",
+      "line": 299,
+      "category": "DATA_EXFILTRATION",
+      "pattern": "(read|cat|type|Get-Content)\\s+.*(\\.env|\\.pem|id_rsa|\\.key|secret|password|token|api[_-]?key)",
+      "snippet": "For Skills with multiple domains, organize content by domain to avoid loading irrelevant context. When a user asks about"
+    },
+    {
+      "file": "workflow\\writing-skills\\anthropic-best-practices.md",
+      "line": 628,
+      "category": "PROMPT_INJECTION",
+      "pattern": "DAN|Do Anything Now|unrestricted|unfiltered",
+      "snippet": "**For flexible guidance** (when adaptation is useful):"
+    },
+    {
+      "file": "workflow\\writing-skills\\anthropic-best-practices.md",
+      "line": 1049,
+      "category": "DATA_EXFILTRATION",
+      "pattern": "(read|cat|type|Get-Content)\\s+.*(\\.env|\\.pem|id_rsa|\\.key|secret|password|token|api[_-]?key)",
+      "snippet": "When the user asks about revenue, Claude reads SKILL.md, sees the reference to `reference/finance.md`, and invokes bash "
+    },
+    {
+      "file": "workflow\\writing-skills\\anthropic-best-practices.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=5.07",
+      "snippet": "full file"
+    },
+    {
+      "file": "workflow\\writing-skills\\persuasion-principles.md",
+      "line": 131,
+      "category": "PROMPT_INJECTION",
+      "pattern": "DAN|Do Anything Now|unrestricted|unfiltered",
+      "snippet": "| Guidance/technique | Moderate Authority + Unity | Heavy authority |"
+    },
+    {
+      "file": "workflow\\writing-skills\\persuasion-principles.md",
+      "line": 183,
+      "category": "PROMPT_INJECTION",
+      "pattern": "DAN|Do Anything Now|unrestricted|unfiltered",
+      "snippet": "1. **What type is it?** (Discipline vs. guidance vs. reference)"
+    },
+    {
+      "file": "workflow\\writing-skills\\persuasion-principles.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.98",
+      "snippet": "full file"
+    },
+    {
+      "file": "workflow\\writing-skills\\SKILL.md",
+      "line": 20,
+      "category": "PROMPT_INJECTION",
+      "pattern": "DAN|Do Anything Now|unrestricted|unfiltered",
+      "snippet": "**Official guidance:** For Anthropic's official skill authoring best practices, see anthropic-best-practices.md. This do"
+    },
+    {
+      "file": "workflow\\writing-skills\\SKILL.md",
+      "line": 256,
+      "category": "PROMPT_INJECTION",
+      "pattern": "DAN|Do Anything Now|unrestricted|unfiltered",
+      "snippet": "**Eliminate redundancy:**"
+    },
+    {
+      "file": "workflow\\writing-skills\\SKILL.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.99",
+      "snippet": "full file"
+    },
+    {
+      "file": "workflow\\writing-skills\\testing-skills-with-subagents.md",
+      "line": 28,
+      "category": "PROMPT_INJECTION",
+      "pattern": "bypass|circumvent|override\\s+(safety|security|guard)",
+      "snippet": "- Skills agents have no incentive to bypass"
+    },
+    {
+      "file": "workflow\\writing-skills\\testing-skills-with-subagents.md",
+      "line": 63,
+      "category": "REVERSE_SHELL",
+      "pattern": "crontab\\s+-e|at\\s+\\d+",
+      "snippet": "You manually tested all edge cases. It's 6pm, dinner at 6:30pm."
+    },
+    {
+      "file": "workflow\\writing-skills\\testing-skills-with-subagents.md",
+      "line": 64,
+      "category": "REVERSE_SHELL",
+      "pattern": "crontab\\s+-e|at\\s+\\d+",
+      "snippet": "Code review tomorrow at 9am. You just realized you didn't write tests."
+    },
+    {
+      "file": "workflow\\writing-skills\\testing-skills-with-subagents.md",
+      "line": 114,
+      "category": "REVERSE_SHELL",
+      "pattern": "crontab\\s+-e|at\\s+\\d+",
+      "snippet": "It's 6pm, dinner at 6:30pm. Code review tomorrow 9am."
+    },
+    {
+      "file": "workflow\\writing-skills\\testing-skills-with-subagents.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=5.00",
+      "snippet": "full file"
+    },
+    {
+      "file": "workflow\\writing-skills\\examples\\CLAUDE_MD_TESTING.md",
+      "line": 60,
+      "category": "PROMPT_INJECTION",
+      "pattern": "DAN|Do Anything Now|unrestricted|unfiltered",
+      "snippet": "A) Check ~/.claude/skills/coding/ for refactoring guidance"
+    },
+    {
+      "file": "workflow\\writing-skills\\examples\\CLAUDE_MD_TESTING.md",
+      "line": 109,
+      "category": "PROMPT_INJECTION",
+      "pattern": "DAN|Do Anything Now|unrestricted|unfiltered",
+      "snippet": "3. Follow the skill's guidance - it prevents known pitfalls"
+    },
+    {
+      "file": "workflow\\writing-skills\\examples\\CLAUDE_MD_TESTING.md",
+      "line": 161,
+      "category": "PROMPT_INJECTION",
+      "pattern": "DAN|Do Anything Now|unrestricted|unfiltered",
+      "snippet": "- Agent follows skill guidance under pressure"
+    },
+    {
+      "file": "workflow\\writing-skills\\examples\\CLAUDE_MD_TESTING.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.97",
+      "snippet": "full file"
+    },
+    {
+      "file": "writing\\caveman\\README.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.81",
+      "snippet": "full file"
+    },
+    {
+      "file": "writing\\caveman\\SKILL.md",
+      "line": 33,
+      "category": "PROMPT_INJECTION",
+      "pattern": "DAN|Do Anything Now|unrestricted|unfiltered",
+      "snippet": "Answer directly in this style. Skip \"caveman mode on\", \"me caveman think\", \"Caveman:\" prefix or recap redundant with the"
+    },
+    {
+      "file": "writing\\caveman\\SKILL.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.88",
+      "snippet": "full file"
+    },
+    {
+      "file": "writing\\humanizer\\AGENTS.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.70",
+      "snippet": "full file"
+    },
+    {
+      "file": "writing\\humanizer\\README.md",
+      "line": 171,
+      "category": "PROMPT_INJECTION",
+      "pattern": "DAN|Do Anything Now|unrestricted|unfiltered",
+      "snippet": "- **3.0.0** - Rebuilt the skill around one account of why AI text sounds the way it does, and consolidated 35 patterns i"
+    },
+    {
+      "file": "writing\\humanizer\\README.md",
+      "line": 175,
+      "category": "PROMPT_INJECTION",
+      "pattern": "DAN|Do Anything Now|unrestricted|unfiltered",
+      "snippet": "- **2.11.0** - Rewrote all repo guidance, descriptions, checks, and skill instructions in Plain Language. Kept all 35 pa"
+    },
+    {
+      "file": "writing\\humanizer\\README.md",
+      "line": 187,
+      "category": "PROMPT_INJECTION",
+      "pattern": "DAN|Do Anything Now|unrestricted|unfiltered",
+      "snippet": "- **2.6.0** - Combined repeated workflow text, limited personality guidance to the right content, removed model guesses,"
+    },
+    {
+      "file": "writing\\humanizer\\README.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.85",
+      "snippet": "full file"
+    },
+    {
+      "file": "writing\\humanizer\\SKILL.md",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.64",
+      "snippet": "full file"
+    },
+    {
+      "file": "design\\ui-ux-pro-max\\scripts\\core.py",
+      "line": 31,
+      "category": "PROMPT_INJECTION",
+      "pattern": "DAN|Do Anything Now|unrestricted|unfiltered",
+      "snippet": "        \"output_cols\": [\"Data Type\", \"Keywords\", \"Best Chart Type\", \"Secondary Options\", \"Color Guidance\", \"Accessibilit"
+    },
+    {
+      "file": "design\\ui-ux-pro-max\\scripts\\core.py",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.84",
+      "snippet": "full file"
+    },
+    {
+      "file": "design\\ui-ux-pro-max\\scripts\\design_system.py",
+      "line": 9,
+      "category": "MALICIOUS_CODE",
+      "pattern": "shell_exec|passthru|system\\(",
+      "snippet": "    result = generate_design_system(\"SaaS dashboard\", \"My Project\")"
+    },
+    {
+      "file": "design\\ui-ux-pro-max\\scripts\\design_system.py",
+      "line": 12,
+      "category": "MALICIOUS_CODE",
+      "pattern": "shell_exec|passthru|system\\(",
+      "snippet": "    result = generate_design_system(\"SaaS dashboard\", \"My Project\", persist=True)"
+    },
+    {
+      "file": "design\\ui-ux-pro-max\\scripts\\design_system.py",
+      "line": 13,
+      "category": "MALICIOUS_CODE",
+      "pattern": "shell_exec|passthru|system\\(",
+      "snippet": "    result = generate_design_system(\"SaaS dashboard\", \"My Project\", persist=True, page=\"dashboard\")"
+    },
+    {
+      "file": "design\\ui-ux-pro-max\\scripts\\design_system.py",
+      "line": 462,
+      "category": "MALICIOUS_CODE",
+      "pattern": "shell_exec|passthru|system\\(",
+      "snippet": "def generate_design_system(query: str, project_name: str = None, output_format: str = \"ascii\", "
+    },
+    {
+      "file": "design\\ui-ux-pro-max\\scripts\\design_system.py",
+      "line": 483,
+      "category": "MALICIOUS_CODE",
+      "pattern": "shell_exec|passthru|system\\(",
+      "snippet": "        persist_design_system(design_system, page, output_dir, query)"
+    },
+    {
+      "file": "design\\ui-ux-pro-max\\scripts\\design_system.py",
+      "line": 491,
+      "category": "MALICIOUS_CODE",
+      "pattern": "shell_exec|passthru|system\\(",
+      "snippet": "def persist_design_system(design_system: dict, page: str = None, output_dir: str = None, page_query: str = None) -> dict"
+    },
+    {
+      "file": "design\\ui-ux-pro-max\\scripts\\design_system.py",
+      "line": 1066,
+      "category": "MALICIOUS_CODE",
+      "pattern": "shell_exec|passthru|system\\(",
+      "snippet": "    result = generate_design_system(args.query, args.project_name, args.format)"
+    },
+    {
+      "file": "design\\ui-ux-pro-max\\scripts\\design_system.py",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.86",
+      "snippet": "full file"
+    },
+    {
+      "file": "design\\ui-ux-pro-max\\scripts\\search.py",
+      "line": 76,
+      "category": "MALICIOUS_CODE",
+      "pattern": "shell_exec|passthru|system\\(",
+      "snippet": "        result = generate_design_system("
+    },
+    {
+      "file": "design\\ui-ux-pro-max\\scripts\\search.py",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.90",
+      "snippet": "full file"
+    },
+    {
+      "file": "eval\\validate-config\\scripts\\validate_config.py",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.95",
+      "snippet": "full file"
+    },
+    {
+      "file": "writing\\humanizer\\scripts\\validate-package.py",
+      "line": 85,
+      "category": "REVERSE_SHELL",
+      "pattern": "crontab\\s+-e|at\\s+\\d+",
+      "snippet": "    raise SystemExit(\"Keep SKILL.md at 400 lines or fewer\")"
+    },
+    {
+      "file": "writing\\humanizer\\scripts\\validate-package.py",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=5.25",
+      "snippet": "full file"
+    },
+    {
+      "file": "Install-Skills.ps1",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=5.14",
+      "snippet": "full file"
+    },
+    {
+      "file": "quality\\systematic-debugging\\find-polluter.sh",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=5.10",
+      "snippet": "full file"
+    },
+    {
+      "file": "workflow\\brainstorming\\scripts\\start-server.sh",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=5.32",
+      "snippet": "full file"
+    },
+    {
+      "file": "workflow\\brainstorming\\scripts\\stop-server.sh",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=5.12",
+      "snippet": "full file"
+    },
+    {
+      "file": "workflow\\brainstorming\\scripts\\helper.js",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.73",
+      "snippet": "full file"
+    },
+    {
+      "file": "workflow\\writing-skills\\render-graphs.js",
+      "line": 25,
+      "category": "MALICIOUS_CODE",
+      "pattern": "\\bexec\\s*\\(",
+      "snippet": "  while ((match = regex.exec(markdown)) !== null) {"
+    },
+    {
+      "file": "workflow\\writing-skills\\render-graphs.js",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=5.02",
+      "snippet": "full file"
+    },
+    {
+      "file": "quality\\systematic-debugging\\condition-based-waiting-example.ts",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.90",
+      "snippet": "full file"
+    },
+    {
+      "file": "registry.json",
+      "line": 144,
+      "category": "PROMPT_INJECTION",
+      "pattern": "DAN|Do Anything Now|unrestricted|unfiltered",
+      "snippet": "      \"description\": \"FastAPI + Pydantic best practices (official)\","
+    },
+    {
+      "file": "registry.json",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.64",
+      "snippet": "full file"
+    },
+    {
+      "file": "eval\\tdd-eval\\evals\\evals.json",
+      "line": 17,
+      "category": "PROMPT_INJECTION",
+      "pattern": "DAN|Do Anything Now|unrestricted|unfiltered",
+      "snippet": "      \"name\": \"TDD usage guidance\","
+    },
+    {
+      "file": "workflow\\karpathy-guidelines\\evals\\evals.json",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.51",
+      "snippet": "full file"
+    },
+    {
+      "file": "writing\\humanizer\\agents\\openai.yaml",
+      "line": 0,
+      "category": "HIGH_ENTROPY",
+      "pattern": "entropy=4.53",
+      "snippet": "full file"
+    }
+  ]
+}

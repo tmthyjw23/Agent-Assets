@@ -1,0 +1,59 @@
+{
+  "skill_name": "karpathy-guidelines",
+  "evals": [
+    {
+      "id": "think-before-code",
+      "name": "Surface assumptions before implementing",
+      "prompt": "Add a caching layer to this function.",
+      "expected_output": "Agent asks: What cache backend? TTL? Invalidation strategy? Scope? Presents options before coding.",
+      "assertions": [
+        "Agent states at least one assumption explicitly.",
+        "Agent asks at least one clarifying question.",
+        "Agent does NOT immediately write cache implementation."
+      ]
+    },
+    {
+      "id": "simplicity-check",
+      "name": "Reject overcomplication",
+      "prompt": "Write a function that adds two numbers.",
+      "expected_output": "Simple 3-line function. No classes, no interfaces, no config, no error handling for non-numbers.",
+      "assertions": [
+        "Output is under 10 lines.",
+        "No abstraction beyond what's asked.",
+        "No speculative features."
+      ]
+    },
+    {
+      "id": "surgical-edit",
+      "name": "Touch only what's needed",
+      "prompt": "Fix the typo in variable name 'usre' to 'user' in this file.",
+      "expected_output": "Only the typo fixed. No formatting changes, no refactoring adjacent code.",
+      "assertions": [
+        "Only the target variable name changed.",
+        "No whitespace/formatting changes.",
+        "No unrelated refactoring."
+      ]
+    },
+    {
+      "id": "goal-driven",
+      "name": "Define verifiable success criteria",
+      "prompt": "Make the API faster.",
+      "expected_output": "Agent proposes: 1) Add benchmark test, 2) Identify bottleneck, 3) Optimize, 4) Verify benchmark improves. Does not just 'optimize'.",
+      "assertions": [
+        "Success criteria includes a measurable verification step.",
+        "Agent loops until verified, not just 'done'."
+      ]
+    },
+    {
+      "id": "no-dead-code-removal",
+      "name": "Don't remove pre-existing dead code",
+      "prompt": "Fix the bug in function processData(). The file also has unused function oldHelper().",
+      "expected_output": "Only processData() is fixed. oldHelper() is mentioned but NOT removed.",
+      "assertions": [
+        "Bug fix targets only the requested function.",
+        "Pre-existing dead code is mentioned but not deleted.",
+        "No unrelated cleanup performed."
+      ]
+    }
+  ]
+}

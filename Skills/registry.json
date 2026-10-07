@@ -1,0 +1,480 @@
+{
+  "categories": [
+    "backend",
+    "design",
+    "eval",
+    "frontend",
+    "quality",
+    "spec",
+    "SystemDesign",
+    "tools",
+    "workflow",
+    "writing"
+  ],
+  "library": "D:\\Agent-Assets\\Skills",
+  "skills": [
+    {
+      "category": "workflow",
+      "description": "Establishes how to find and use skills, must invoke before any response",
+      "name": "using-superpowers",
+      "path": "workflow/using-superpowers",
+      "source": "AppleDevAcademy/.agent/skills"
+    },
+    {
+      "category": "workflow",
+      "description": "Behavioral guidelines to reduce common LLM coding mistakes: Think Before Coding, Simplicity First, Surgical Changes, Goal-Driven Execution",
+      "name": "karpathy-guidelines",
+      "path": "workflow/karpathy-guidelines",
+      "source": "multica-ai/andrej-karpathy-skills (GitHub)"
+    },
+    {
+      "category": "workflow",
+      "description": "Explore intent/requirements/design before creative work",
+      "name": "brainstorming",
+      "path": "workflow/brainstorming",
+      "source": "AppleDevAcademy/.agent/skills"
+    },
+    {
+      "category": "workflow",
+      "description": "Write implementation plan before touching code",
+      "name": "writing-plans",
+      "path": "workflow/writing-plans",
+      "source": "AppleDevAcademy/.agent/skills"
+    },
+    {
+      "category": "workflow",
+      "description": "Execute written plan in separate session with checkpoints",
+      "name": "executing-plans",
+      "path": "workflow/executing-plans",
+      "source": "AppleDevAcademy/.agent/skills"
+    },
+    {
+      "category": "workflow",
+      "description": "2+ independent tasks in parallel",
+      "name": "dispatching-parallel-agents",
+      "path": "workflow/dispatching-parallel-agents",
+      "source": "AppleDevAcademy/.agent/skills"
+    },
+    {
+      "category": "workflow",
+      "description": "Execute plans with subagents in current session",
+      "name": "subagent-driven-development",
+      "path": "workflow/subagent-driven-development",
+      "source": "AppleDevAcademy/.agent/skills"
+    },
+    {
+      "category": "workflow",
+      "description": "Create/edit/verify skills",
+      "name": "writing-skills",
+      "path": "workflow/writing-skills",
+      "source": "AppleDevAcademy/.agent/skills"
+    },
+    {
+      "category": "quality",
+      "description": "Systematic debugging before proposing fixes",
+      "name": "systematic-debugging",
+      "path": "quality/systematic-debugging",
+      "source": "AppleDevAcademy/.agent/skills"
+    },
+    {
+      "category": "quality",
+      "description": "TDD before implementation code",
+      "name": "test-driven-development",
+      "path": "quality/test-driven-development",
+      "source": "AppleDevAcademy/.agent/skills"
+    },
+    {
+      "category": "quality",
+      "description": "Run verification before claiming complete/commit/PR",
+      "name": "verification-before-completion",
+      "path": "quality/verification-before-completion",
+      "source": "AppleDevAcademy/.agent/skills"
+    },
+    {
+      "category": "quality",
+      "description": "Verify work before merging",
+      "name": "requesting-code-review",
+      "path": "quality/requesting-code-review",
+      "source": "AppleDevAcademy/.agent/skills"
+    },
+    {
+      "category": "quality",
+      "description": "Handle review feedback with rigor",
+      "name": "receiving-code-review",
+      "path": "quality/receiving-code-review",
+      "source": "AppleDevAcademy/.agent/skills"
+    },
+    {
+      "category": "quality",
+      "description": "Merge/PR/cleanup options when done",
+      "name": "finishing-a-development-branch",
+      "path": "quality/finishing-a-development-branch",
+      "source": "AppleDevAcademy/.agent/skills"
+    },
+    {
+      "category": "quality",
+      "description": "Isolated workspace via git worktree",
+      "name": "using-git-worktrees",
+      "path": "quality/using-git-worktrees",
+      "source": "AppleDevAcademy/.agent/skills"
+    },
+    {
+      "category": "design",
+      "description": "UI/UX intelligence: 50 styles, 21 palettes, 50 fonts",
+      "name": "ui-ux-pro-max",
+      "path": "design/ui-ux-pro-max",
+      "source": "AppleDevAcademy/.agent/skills"
+    },
+    {
+      "category": "design",
+      "description": "Extract design tokens from public URL",
+      "name": "extract-design-system",
+      "path": "design/extract-design-system",
+      "source": "MeisKitchen/.agents/skills (npx: arvindrk/extract-design-system)"
+    },
+    {
+      "category": "spec",
+      "description": "Turn conversation into spec for issue tracker",
+      "name": "to-spec",
+      "path": "spec/to-spec",
+      "source": "MeisKitchen/.agents/skills (npx: mattpocock/skills)"
+    },
+    {
+      "category": "backend",
+      "description": "FastAPI + Pydantic best practices (official)",
+      "name": "fastapi",
+      "path": "backend/fastapi",
+      "source": "collage/ExpertSystem/.venv fastapi package"
+    },
+    {
+      "category": "backend",
+      "description": "Typer CLI best practices (official)",
+      "name": "typer",
+      "path": "backend/typer",
+      "source": "Ody/backend/.venv typer package"
+    },
+    {
+      "category": "backend",
+      "description": ".env loader Node.js + gotchas",
+      "name": "dotenv",
+      "path": "backend/dotenv",
+      "source": "MeisKitchen node_modules dotenv"
+    },
+    {
+      "category": "backend",
+      "description": "dotenvx multi-env + encrypt + CI/CD",
+      "name": "dotenvx",
+      "path": "backend/dotenvx",
+      "source": "MeisKitchen node_modules dotenv"
+    },
+    {
+      "category": "frontend",
+      "description": "Build modern Redux (official RTK)",
+      "name": "modern-redux",
+      "path": "frontend/modern-redux",
+      "source": "node_modules @reduxjs/toolkit"
+    },
+    {
+      "category": "frontend",
+      "description": "Redux dataflow (official RTK)",
+      "name": "redux-dataflow",
+      "path": "frontend/redux-dataflow",
+      "source": "node_modules @reduxjs/toolkit"
+    },
+    {
+      "category": "frontend",
+      "description": "Debug RTK apps (official)",
+      "name": "debug-redux-toolkit-apps",
+      "path": "frontend/debug-redux-toolkit-apps",
+      "source": "node_modules @reduxjs/toolkit"
+    },
+    {
+      "category": "frontend",
+      "description": "Migrate to modern Redux (official)",
+      "name": "migrate-to-modern-redux",
+      "path": "frontend/migrate-to-modern-redux",
+      "source": "node_modules @reduxjs/toolkit"
+    },
+    {
+      "category": "frontend",
+      "description": "Adopt RTK Query (official)",
+      "name": "adopt-rtk-query",
+      "path": "frontend/adopt-rtk-query",
+      "source": "node_modules @reduxjs/toolkit"
+    },
+    {
+      "category": "frontend",
+      "description": "Build slices and selectors (official)",
+      "name": "build-slices-and-selectors",
+      "path": "frontend/build-slices-and-selectors",
+      "source": "node_modules @reduxjs/toolkit"
+    },
+    {
+      "category": "frontend",
+      "description": "Design state ownership (official)",
+      "name": "design-state-ownership",
+      "path": "frontend/design-state-ownership",
+      "source": "node_modules @reduxjs/toolkit"
+    },
+    {
+      "category": "frontend",
+      "description": "Handle side effects (official)",
+      "name": "handle-side-effects",
+      "path": "frontend/handle-side-effects",
+      "source": "node_modules @reduxjs/toolkit"
+    },
+    {
+      "category": "writing",
+      "description": "Remove AI writing patterns without changing facts (v3.0.0)",
+      "name": "humanizer",
+      "path": "writing/humanizer",
+      "source": "GenBI/humanizer"
+    },
+    {
+      "category": "writing",
+      "description": "Ultra-compressed communication mode, levels lite/full/ultra plus wenyan variants. Use for caveman mode, be brief, less tokens",
+      "name": "caveman",
+      "path": "writing/caveman",
+      "source": "juliusbrussee/caveman via npx skills add"
+    },
+    {
+      "category": "design",
+      "description": "Apple interface design and fluid physical motion for the web: springs, gestures, momentum, materials, typography",
+      "name": "apple-design",
+      "path": "design/apple-design",
+      "source": "emilkowalski/skills via npx skills add"
+    },
+    {
+      "category": "workflow",
+      "description": "Relentless interview to sharpen a plan or design; calls the grilling skill",
+      "name": "grill-me",
+      "path": "workflow/grill-me",
+      "source": "mattpocock/skills via npx skills add"
+    },
+    {
+      "category": "workflow",
+      "description": "Grill the user relentlessly about a plan, decision, or idea; stress-test thinking in rounds",
+      "name": "grilling",
+      "path": "workflow/grilling",
+      "source": "mattpocock/skills via npx skills add"
+    },
+    {
+      "category": "workflow",
+      "description": "Discover and install agent skills from the open ecosystem when user needs new capability",
+      "name": "find-skills",
+      "path": "workflow/find-skills",
+      "source": "vercel-labs/skills via npx skills add"
+    },
+    {
+      "category": "tools",
+      "description": "Browser automation CLI for AI agents: navigate, click, forms, screenshots, scraping, QA, Electron apps",
+      "name": "agent-browser",
+      "path": "tools/agent-browser",
+      "source": "vercel-labs/agent-browser via npx skills add"
+    },
+    {
+      "category": "SystemDesign",
+      "description": "System design skill (ByteByteGo system-design-101)",
+      "name": "api-design",
+      "path": "SystemDesign/api-design",
+      "source": "ByteByteGoHq/system-design-101 (local clone)"
+    },
+    {
+      "category": "SystemDesign",
+      "description": "System design skill (ByteByteGo system-design-101)",
+      "name": "architecture-case-studies",
+      "path": "SystemDesign/architecture-case-studies",
+      "source": "ByteByteGoHq/system-design-101 (local clone)"
+    },
+    {
+      "category": "SystemDesign",
+      "description": "System design skill (ByteByteGo system-design-101)",
+      "name": "backend-architecture",
+      "path": "SystemDesign/backend-architecture",
+      "source": "ByteByteGoHq/system-design-101 (local clone)"
+    },
+    {
+      "category": "SystemDesign",
+      "description": "System design skill (ByteByteGo system-design-101)",
+      "name": "caching-and-cdn",
+      "path": "SystemDesign/caching-and-cdn",
+      "source": "ByteByteGoHq/system-design-101 (local clone)"
+    },
+    {
+      "category": "SystemDesign",
+      "description": "System design skill (ByteByteGo system-design-101)",
+      "name": "cloud-and-infrastructure",
+      "path": "SystemDesign/cloud-and-infrastructure",
+      "source": "ByteByteGoHq/system-design-101 (local clone)"
+    },
+    {
+      "category": "SystemDesign",
+      "description": "System design skill (ByteByteGo system-design-101)",
+      "name": "computer-fundamentals",
+      "path": "SystemDesign/computer-fundamentals",
+      "source": "ByteByteGoHq/system-design-101 (local clone)"
+    },
+    {
+      "category": "SystemDesign",
+      "description": "System design skill (ByteByteGo system-design-101)",
+      "name": "data-and-ai-pipelines",
+      "path": "SystemDesign/data-and-ai-pipelines",
+      "source": "ByteByteGoHq/system-design-101 (local clone)"
+    },
+    {
+      "category": "SystemDesign",
+      "description": "System design skill (ByteByteGo system-design-101)",
+      "name": "database-design",
+      "path": "SystemDesign/database-design",
+      "source": "ByteByteGoHq/system-design-101 (local clone)"
+    },
+    {
+      "category": "SystemDesign",
+      "description": "System design skill (ByteByteGo system-design-101)",
+      "name": "deployment-strategies",
+      "path": "SystemDesign/deployment-strategies",
+      "source": "ByteByteGoHq/system-design-101 (local clone)"
+    },
+    {
+      "category": "SystemDesign",
+      "description": "System design skill (ByteByteGo system-design-101)",
+      "name": "developer-productivity",
+      "path": "SystemDesign/developer-productivity",
+      "source": "ByteByteGoHq/system-design-101 (local clone)"
+    },
+    {
+      "category": "SystemDesign",
+      "description": "System design skill (ByteByteGo system-design-101)",
+      "name": "devops-and-platform",
+      "path": "SystemDesign/devops-and-platform",
+      "source": "ByteByteGoHq/system-design-101 (local clone)"
+    },
+    {
+      "category": "SystemDesign",
+      "description": "System design skill (ByteByteGo system-design-101)",
+      "name": "distributed-systems",
+      "path": "SystemDesign/distributed-systems",
+      "source": "ByteByteGoHq/system-design-101 (local clone)"
+    },
+    {
+      "category": "SystemDesign",
+      "description": "System design skill (ByteByteGo system-design-101)",
+      "name": "high-availability-and-resilience",
+      "path": "SystemDesign/high-availability-and-resilience",
+      "source": "ByteByteGoHq/system-design-101 (local clone)"
+    },
+    {
+      "category": "SystemDesign",
+      "description": "System design skill (ByteByteGo system-design-101)",
+      "name": "messaging-and-streaming",
+      "path": "SystemDesign/messaging-and-streaming",
+      "source": "ByteByteGoHq/system-design-101 (local clone)"
+    },
+    {
+      "category": "SystemDesign",
+      "description": "System design skill (ByteByteGo system-design-101)",
+      "name": "networking-fundamentals",
+      "path": "SystemDesign/networking-fundamentals",
+      "source": "ByteByteGoHq/system-design-101 (local clone)"
+    },
+    {
+      "category": "SystemDesign",
+      "description": "System design skill (ByteByteGo system-design-101)",
+      "name": "observability",
+      "path": "SystemDesign/observability",
+      "source": "ByteByteGoHq/system-design-101 (local clone)"
+    },
+    {
+      "category": "SystemDesign",
+      "description": "System design skill (ByteByteGo system-design-101)",
+      "name": "payment-systems",
+      "path": "SystemDesign/payment-systems",
+      "source": "ByteByteGoHq/system-design-101 (local clone)"
+    },
+    {
+      "category": "SystemDesign",
+      "description": "System design skill (ByteByteGo system-design-101)",
+      "name": "scalability-and-performance",
+      "path": "SystemDesign/scalability-and-performance",
+      "source": "ByteByteGoHq/system-design-101 (local clone)"
+    },
+    {
+      "category": "SystemDesign",
+      "description": "System design skill (ByteByteGo system-design-101)",
+      "name": "security-and-auth",
+      "path": "SystemDesign/security-and-auth",
+      "source": "ByteByteGoHq/system-design-101 (local clone)"
+    },
+    {
+      "category": "SystemDesign",
+      "description": "System design skill (ByteByteGo system-design-101)",
+      "name": "software-engineering-craft",
+      "path": "SystemDesign/software-engineering-craft",
+      "source": "ByteByteGoHq/system-design-101 (local clone)"
+    },
+    {
+      "category": "SystemDesign",
+      "description": "System design skill (ByteByteGo system-design-101)",
+      "name": "system-design-interviews",
+      "path": "SystemDesign/system-design-interviews",
+      "source": "ByteByteGoHq/system-design-101 (local clone)"
+    },
+    {
+      "category": "SystemDesign",
+      "description": "System design skill (ByteByteGo system-design-101)",
+      "name": "system-design-method",
+      "path": "SystemDesign/system-design-method",
+      "source": "ByteByteGoHq/system-design-101 (local clone)"
+    },
+    {
+      "category": "eval",
+      "description": "Eval harness skill",
+      "name": "agent-skill-eval",
+      "path": "eval/agent-skill-eval",
+      "source": "tardigrde/agent-skill-eval + darkrishabh/agent-skills-eval harness"
+    },
+    {
+      "category": "eval",
+      "description": "Summarize small CSV files and identify the highest revenue month.",
+      "name": "basic-skill",
+      "path": "eval/basic-skill",
+      "source": "tardigrde/agent-skill-eval + darkrishabh/agent-skills-eval harness"
+    },
+    {
+      "category": "eval",
+      "description": "Check out latest base branch, create a new feature branch, commit changes, push to remote, and create a pull request via gh CLI.",
+      "name": "commit-push-pr",
+      "path": "eval/commit-push-pr",
+      "source": "tardigrde/agent-skill-eval + darkrishabh/agent-skills-eval harness"
+    },
+    {
+      "category": "eval",
+      "description": "Run the test suite, identify failing tests, diagnose the root cause in the source code, fix the bugs, and verify all tests pass.",
+      "name": "fix-failing-tests",
+      "path": "eval/fix-failing-tests",
+      "source": "tardigrde/agent-skill-eval + darkrishabh/agent-skills-eval harness"
+    },
+    {
+      "category": "eval",
+      "description": "Review a proposed code change (a .diff/.patch file) against the current source code and deliver a structured, severity-tagged review verdict in chat, without modifying or creating any files.",
+      "name": "review-diff",
+      "path": "eval/review-diff",
+      "source": "tardigrde/agent-skill-eval + darkrishabh/agent-skills-eval harness"
+    },
+    {
+      "category": "eval",
+      "description": "Validate a project configuration file against the team's structural requirements and naming/range conventions, then write a CONFIG_REPORT.md listing every violation.",
+      "name": "validate-config",
+      "path": "eval/validate-config",
+      "source": "tardigrde/agent-skill-eval + darkrishabh/agent-skills-eval harness"
+    },
+    {
+      "category": "eval",
+      "description": "Turn a commit history into polished, grouped release notes in RELEASE_NOTES.md. Groups changes by type, highlights breaking changes, and never invents changes that are not in the history.",
+      "name": "write-release-notes",
+      "path": "eval/write-release-notes",
+      "source": "tardigrde/agent-skill-eval + darkrishabh/agent-skills-eval harness"
+    }
+  ],
+  "version": 1
+}
